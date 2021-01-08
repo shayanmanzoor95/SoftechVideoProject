@@ -4,6 +4,7 @@ export interface IOptions{
     width:string,
     preload:string,
     fluid: boolean,
+    muted:boolean,
       aspectRatio: string,
       autoplay: boolean,
       sources: {

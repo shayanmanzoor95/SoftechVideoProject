@@ -3,6 +3,7 @@ import { CUSTOM_ELEMENTS_SCHEMA, DoBootstrap, Injector, NgModule } from '@angula
 
 import { MyVideoPlayerComponent } from './my-video-player/my-video-player.component';
 import { createCustomElement } from '@angular/elements';
+import { ElementZoneStrategyFactory } from 'elements-zone-strategy';
 
 @NgModule({
   declarations: [
@@ -17,11 +18,14 @@ import { createCustomElement } from '@angular/elements';
 })
 export class AppModule implements DoBootstrap {
   constructor(private injector:Injector){
+   
   }
 
   
   ngDoBootstrap(){ 
-    const webComponent=createCustomElement(MyVideoPlayerComponent,{injector:this.injector});
+    const strategyFactory = new ElementZoneStrategyFactory(MyVideoPlayerComponent, this.injector);
+
+    const webComponent=createCustomElement(MyVideoPlayerComponent,{injector:this.injector,strategyFactory});
     
     customElements.define('custom-player',webComponent)
    }

@@ -8,7 +8,9 @@
     <!-- <link rel="stylesheet" href="styles.scss"> -->
 </head>
 <body>
-        <custom-player id="videoPlayer" my-options='{"height":"500px","width":"700px","poster":"../../assets/poster.jpg","preload":"auto","autoplay": false,"controls": true, "sources": [{ "src": ".././assets/video.mp4", "type": "video/mp4" }]}'></custom-player>
+    <script src="https://unpkg.com/@webcomponents/custom-elements"></script>
+        <custom-player id="videoPlayer" my-options='{"height":"500px","width":"700px","poster":"../../assets/poster.jpg","preload":"auto","muted":true,"autoplay": false,"controls": true, "sources": [{ "src": ".././assets/video.mp4", "type": "video/mp4" }]}'></custom-player>
+        <custom-player id="videoPlayer" my-options='{"height":"500px","width":"700px","poster":"../../assets/poster.jpg","preload":"auto","muted":true,"autoplay": false,"controls": true, "sources": [{ "src": ".././assets/video2.mp4", "type": "video/mp4" }]}'></custom-player>
 
         <!-- <script>
             myelem=document.getElementsByName('custom-player')

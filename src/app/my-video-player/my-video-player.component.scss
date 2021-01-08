@@ -382,16 +382,15 @@
 
 .video-js {
   display: block;
-//   vertical-align: top;
   box-sizing: border-box;
   color: #fff;
   background-color: #000;
   position: relative;
-  padding: 450px;
-  // width: 100%;
+  padding-top: 500px;
+  width: 60%;
   // height: 100%;
   font-size: 10px;
-  line-height: 1;
+  line-height: 3;
   font-weight: normal;
   font-style: normal;
   font-family: Arial, Helvetica, sans-serif;
@@ -431,7 +430,7 @@
 .video-js.vjs-4-3 {
   width: 100%;
   max-width: 100%;
-  height: 0;
+  height: 50%;
 }
 
 .video-js.vjs-16-9 {
@@ -925,7 +924,7 @@ body.vjs-full-window {
   font-size: 1.7em;
   position: absolute;
   right: -0.5em;
-  top: -0.3333333333em;
+  top: -1.33em;
   z-index: 1;
 }
 
